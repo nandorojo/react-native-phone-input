@@ -1,6 +1,6 @@
 {
-  "name": "@doorman/react-native-phone-input",
-  "version": "0.2.4",
+  "name": "@nandorojo/react-native-phone-input",
+  "version": "0.2.5",
   "description": "Phone input box for React Native, forked by Doorman.",
   "main": "lib/index.js",
   "scripts": {

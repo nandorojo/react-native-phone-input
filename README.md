@@ -19,13 +19,13 @@ Phone input box for React Native
 ## Installation
 
 ```
-yarn add @doorman/react-native-phone-input
+yarn add @nandorojo/react-native-phone-input
 ```
 
 ## Basic Usage
 
 ```jsx
-import PhoneInput from "@doorman/react-native-phone-input";
+import PhoneInput from "@nandorojo/react-native-phone-input";
 
 export default () => {
   const ref = useRef();
