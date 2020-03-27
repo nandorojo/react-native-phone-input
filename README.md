@@ -1,5 +1,15 @@
 # React Native Phone Input
 
+## This is a fork
+
+The `react-native-phone-input` seems unmaintained, so this is meant to address some bugs.
+
+### To-do
+
+◻️ Typescript support
+◻️ Fix refs support
+◻️ Web support
+
 Phone input box for React Native
 
 | ![2560-02-07 01_32_33](https://cloud.githubusercontent.com/assets/21040043/22661097/aa41852e-ecd6-11e6-84da-375cbe05020f.gif) | ![2560-02-08 00_04_18](https://cloud.githubusercontent.com/assets/21040043/22702110/3758ecc0-ed92-11e6-9d2e-421b76d4e2b5.gif) |
@@ -9,19 +19,18 @@ Phone input box for React Native
 ## Installation
 
 ```
-npm i react-native-phone-input --save
+yarn add @doorman/react-native-phone-input
 ```
 
 ## Basic Usage
 
 ```jsx
-import PhoneInput from 'react-native-phone-input'
+import PhoneInput from "@doorman/react-native-phone-input";
 
-render(){
-    return(
-        <PhoneInput ref='phone'/>
-    )
-}
+export default () => {
+  const ref = useRef();
+  return <PhoneInput ref={ref} />;
+};
 ```
 
 [see full basic example](https://github.com/thegamenicorus/react-native-phone-input/blob/master/examples/BasicExample/app.js)
@@ -117,7 +126,7 @@ render(){
 ## Custom Countries
 
 ```jsx
-<PhoneInput countriesList={require('./countries.json')} />
+<PhoneInput countriesList={require("./countries.json")} />
 ```
 
 ## Configuration
